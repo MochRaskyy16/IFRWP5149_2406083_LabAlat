@@ -2,15 +2,11 @@
 
 ### 2406083
 
-- 🔭 I'm currently working on **Pengenalan Lingkungan Praktikum dan Kakas Pemodelan UML**
+- Judul Materi **Pengenalan Lingkungan Praktikum dan Kakas Pemodelan UML**
 
-- 🌱 I'm currently learning **01**
+- Pertemuan **01**
 
-- 👯 I'm looking to collaborate on **Pengenalan Lingkungan Praktikum dan Kakas Pemodelan UML**
-
-- 🤝 I'm looking for help with **Pengenalan Lingkungan Praktikum dan Kakas Pemodelan UML**
-
-- 💬 Ask me about **Pengenalan Lingkungan Praktikum dan Kakas Pemodelan UML**
+- Kelas **INF C**
 
 - 📫 How to reach me **2406083@itg.ac.id**
 
