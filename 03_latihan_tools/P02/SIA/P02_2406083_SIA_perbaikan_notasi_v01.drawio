@@ -1,0 +1,37 @@
+<mxfile host="65bd71144e">
+    <diagram id="XI1ezoufQnf_5mfRK-aJ" name="Page-1">
+        <mxGraphModel dx="628" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="8HRuvx0uM2J6bNmFuK0O-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" value="Sistem Informasi Akademik" vertex="1">
+                    <mxGeometry height="430" width="650" x="280" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="8HRuvx0uM2J6bNmFuK0O-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Mahasiswa" vertex="1">
+                    <mxGeometry height="100" width="60" x="325" y="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="8HRuvx0uM2J6bNmFuK0O-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" value="Lihat Jadwal Kuliah" vertex="1">
+                    <mxGeometry height="70" width="210" x="520" y="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="8HRuvx0uM2J6bNmFuK0O-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Kelola Jadwal Kuliah" vertex="1">
+                    <mxGeometry height="70" width="210" x="520" y="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="8HRuvx0uM2J6bNmFuK0O-5" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Admin Akademik" vertex="1">
+                    <mxGeometry height="100" width="60" x="980" y="335" as="geometry"/>
+                </mxCell>
+                <mxCell id="8HRuvx0uM2J6bNmFuK0O-6" edge="1" parent="1" source="8HRuvx0uM2J6bNmFuK0O-2" style="endArrow=none;html=1;" target="8HRuvx0uM2J6bNmFuK0O-4" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8HRuvx0uM2J6bNmFuK0O-7" edge="1" parent="1" source="8HRuvx0uM2J6bNmFuK0O-2" style="endArrow=none;html=1;" target="8HRuvx0uM2J6bNmFuK0O-3" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8HRuvx0uM2J6bNmFuK0O-8" edge="1" parent="1" source="8HRuvx0uM2J6bNmFuK0O-5" style="endArrow=none;html=1;" target="8HRuvx0uM2J6bNmFuK0O-4" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8HRuvx0uM2J6bNmFuK0O-9" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;" value="Diagram ini sengaja dibuat salah, arahan dari Instruktur&amp;amp;Asdos" vertex="1">
+                    <mxGeometry height="70" width="410" x="400" y="610" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
