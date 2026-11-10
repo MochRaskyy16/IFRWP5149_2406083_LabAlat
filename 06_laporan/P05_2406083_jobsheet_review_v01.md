@@ -1,0 +1,15 @@
+|NO|                                                                                                                      |Temuan|Perbaikan yang di perlukan                                                                                                           |
+|1| Penomoran skenario alternative diulang kembali dari nomor 1.                                                          | Ubah penomoran skenario alternative agar berlanjut dari nomor terakhir skenario normal.                                                    |
+|2| Pewarisan aktor Mahasiswa dan Dosen ke Civitas Akademika dibuatkan tabel skenario terpisah.                           | Gabungkan menjadi satu tabel skenario atas nama Civitas Akademika dan beri catatan pewarisan aktor.                                        |
+|3| Use case khusus Tambah, Ubah, dan Hapus Data Mahasiswa menyalin ulang seluruh langkah dari skenario umum Kelola Data. | Hapus langkah bersama pada use case khusus dan tuliskan hanya perilaku pembeda serta berikan rujukan ke skenario umum SIA-UC10.            |
+|4| Collaboration SIA-CO01 dan SIA-CO02 diberi tabel skenario dan langkah kegiatan mandiri.                               | Hapus tabel skenario mandiri untuk collaboration, cukup sebutkan nama collaboration pada keterangan tabel use case yang direalisasikannya. |
+|5| Relasi include pada LAB-UC04 dan LAB-UC12 dituliskan sebagai langkah aksi aktor biasa.                                | Ubah menjadi alur pemeriksaan/pemanggilan rujukan sistem yang dipanggil di dalam use case utama.                                           |
+|6| Nama use case, ID, dan aktor pada dokumen skenario tidak presisi dengan diagram acuan Pertemuan 4.                    | Lakukan penyesuaian nama, ID, dan aktor agar sama persis 100% dengan diagram kumulatif P04.                                                |
+
+|NO|                                                                   | Alasan|                                                                                                     |
+|1|     Berdasarkan kriteria penilaian C.4, penomoran langkah kegiatan skenario wajib berlanjut dari Skenario Normal ke Skenario Alternative tanpa pengulangan nomor.                |
+|2|.    Aturan generalization aktor mengharuskan use case yang diwarisi hanya ditulis satu kali atas nama aktor umum untuk menghindari redundansi dokumen.                           |
+|3|     Aturan generalization use case menetapkan bahwa skenario umum memuat perilaku bersama, sedangkan skenario khusus hanya memuat perilaku pembeda dan merujuk ke skenario umum. |
+|4|     Collaboration hanya bertindak sebagai konseptual pengorganisasian realisasi dan tidak memiliki alur kegiatan interaksi aktor tersendiri.                                     |
+|5|     Relasi include merupakan perilaku yang dipanggil oleh sistem di dalam use case utama, bukan aksi manual yang berdiri sendiri oleh aktor luar.                                |
+|6|     Konsistensi penamaan antar-artefak (diagram, katalog, skenario, dan matriks traceability) wajib dijaga untuk mencegah terjadinya artifact mismatch.                          |
