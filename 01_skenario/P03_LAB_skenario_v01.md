@@ -8,26 +8,32 @@ Mahasiswa mengajukan peminjaman peralatan dengan memilih alat, jumlah, dan renta
 | :------ | :----------------------------------------------------------------------------------------------- |
 | LAB-R01 | Mahasiswa dapat melihat ketersediaan peralatan                                                   |
 | LAB-R02 | Petugas dapat mengelola data peralatan                                                           |
-| LAB-R03 | Mahasiswa dapat mengajukan peminjaman; sistem memeriksa ketersediaan sebelum menyimpan pengajuan |
+| LAB-R03 | Mahasiswa dapat mengajukan peminjaman; sistem memeriksa ketersediaan sebelum menyimpan pengajuan  |
 | LAB-R04 | Mahasiswa dapat mencetak bukti pada konfirmasi pengajuan jika memilihnya                         |
 | LAB-R05 | Petugas dapat menetapkan persetujuan atau penolakan pengajuan                                    |
 | LAB-R06 | Kepala laboratorium dapat melihat laporan peminjaman                                             |
 
 # BATASAN SISTEM DAN ATURAN
 
-Batas sistem dan aturan: • Sistem mencatat dan menyediakan informasi; perpindahan fisik alat tidak terjadi di dalam perangkat lunak. • Pengguna telah terautentikasi dan memiliki hak akses sesuai peran. • Pengajuan yang diterima sistem berstatus Menunggu keputusan, bukan otomatis Disetujui. • Pengajuan dengan peralatan tidak tersedia tidak disimpan sebagai pengajuan berhasil. • Pencetakan bukti tidak menjadi syarat keberhasilan pengajuan. • Persetujuan petugas belum dimodelkan sebagai reservasi teknis stok. • Pengambilan, pengembalian, kondisi alat, dan denda belum dianalisis pada potongan model ini.
+- Sistem mencatat dan menyediakan informasi; perpindahan fisik alat tidak terjadi di dalam perangkat lunak.
+- Pengguna telah terautentikasi dan memiliki hak akses sesuai peran.
+- Pengajuan yang diterima sistem berstatus Menunggu keputusan, bukan otomatis Disetujui.
+- Pengajuan dengan peralatan tidak tersedia tidak disimpan sebagai pengajuan berhasil.
+- Pencetakan bukti tidak menjadi syarat keberhasilan pengajuan.
+- Persetujuan petugas belum dimodelkan sebagai reservasi teknis stok.
+- Pengambilan, pengembalian, kondisi alat, dan denda belum dianalisis pada potongan model ini.
 
 # TABEL IDENTIFIKASI AKTOR
 
-| Aktor     | Tujuan terhadap sistem                                          |
-| :-------- | :-------------------------------------------------------------- |
-| Mahasiswa | Melihat ketersediaan, mengajukan peminjaman, dan mencetak bukti |
-| Petugas   | laboratorium Mengelola peralatan dan memproses keputusan        |
-| Kepala    | laboratorium Melihat laporan peminjaman                         |
+| Aktor                  | Tujuan terhadap sistem                                          |
+| :--------------------- | :-------------------------------------------------------------- |
+| Mahasiswa              | Melihat ketersediaan, mengajukan peminjaman, dan mencetak bukti |
+| Petugas laboratorium   | Mengelola peralatan dan memproses keputusan                     |
+| Kepala laboratorium    | Melihat laporan peminjaman                                      |
 
-# TABEL KATALOG USECASE
+# TABEL KATALOG USE CASE
 
-| ID       | Nama                         | use case Peran dalam model       |
+| ID       | Nama use case                | Peran dalam model                |
 | :------- | :--------------------------- | :------------------------------- |
 | LAB-UC01 | Lihat ketersediaan peralatan | Fungsi utama mahasiswa           |
 | LAB-UC02 | Kelola data peralatan        | Fungsi utama petugas             |
@@ -39,8 +45,25 @@ Batas sistem dan aturan: • Sistem mencatat dan menyediakan informasi; perpinda
 
 # RELASI INCLUDE
 
-LAB-UC03 «include» LAB-UC04 Alasan: pemeriksaan menjadi bagian validasi pengajuan
+LAB-UC03 «include» LAB-UC04
+Alasan: pemeriksaan ketersediaan menjadi bagian validasi pengajuan.
 
 # RELASI EXTEND
 
-Extension point: Bukti pengajuan tersedia. Kondisi: [mahasiswa memilih cetak]. Alasan: pengajuan tetap berhasil tanpa pencetakan.
+LAB-UC05 «extend» LAB-UC03
+Extension point: Bukti pengajuan tersedia.
+Kondisi: [mahasiswa memilih cetak].
+Alasan: pengajuan tetap berhasil tanpa pencetakan.
+
+# TABEL HUBUNGAN
+
+| Sumber               | Hubungan  | Tujuan   |
+| :-------------------- | :-------- | :------- |
+| Mahasiswa            | Asosiasi  | LAB-UC01 |
+| Mahasiswa            | Asosiasi  | LAB-UC03 |
+| Mahasiswa            | Asosiasi  | LAB-UC05 |
+| Petugas laboratorium | Asosiasi  | LAB-UC02 |
+| Petugas laboratorium | Asosiasi  | LAB-UC06 |
+| Kepala laboratorium  | Asosiasi  | LAB-UC07 |
+| LAB-UC03             | «include» | LAB-UC04 |
+| LAB-UC05             | «extend»  | LAB-UC03 |

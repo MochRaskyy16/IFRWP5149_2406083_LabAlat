@@ -1,6 +1,6 @@
 # P04_SIA_skenario_v01 — Model Tugas Pertemuan 4: Sistem Informasi Akademik, Layanan Hasil Studi
 
-Diagram: `04_model_analisis/P04/SIA/P04_NIM_SIA_usecase_v01.drawio` (ekspor `.png` dengan versi yang sama).  
+Diagram: `04_model_analisis/P04/SIA/P04_2406083_SIA_usecase_v01.drawio` (ekspor `.png` dengan versi yang sama).  
 Diagram bersifat kumulatif: memuat fungsi jadwal (Pertemuan 2), fungsi KRS (Pertemuan 3), dan fungsi hasil studi (Pertemuan 4) dalam satu diagram.
 
 ## 1. Aktor
